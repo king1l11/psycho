@@ -1,2 +1,2 @@
 #!/bin/bash
-python bot.py
+gunicorn --bind 0.0.0.0:10000 bot:app
